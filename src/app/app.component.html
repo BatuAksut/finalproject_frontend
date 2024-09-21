@@ -1,21 +1,8 @@
-<!-- 
-  {{title}}
-  <p>Hello {{user}}</p>
-  <ul>
-    <li>{{product1.productName}}</li>
-    <li>Keyboard</li>
-    <li>Mouse</li>
-  </ul>
-
-  <ul>
-    <li *ngFor="let product of products">{{product.productName}}</li>
-  </ul> -->
 <div class="container">
   <app-navi></app-navi>
   <div class="row">
     <div class="col-md-3"><app-category></app-category></div>
-    <div class="col-md-9"><app-product></app-product></div>
+    <div class="col-md-9"> <router-outlet></router-outlet></div>
   </div>
 
-  <router-outlet />
 </div>
